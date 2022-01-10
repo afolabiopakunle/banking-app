@@ -187,11 +187,28 @@
   height: 60px;
   width: 100%;
   border-radius: 15px;
-  margin-block: .5rem ;
+  margin-block: .5rem;
+  transition: box-shadow .4s ease-in-out;
 }
 
 .statistics {
   height: 250px;
   width: 100%;
   border-radius: 15px;
+}
+
+.transactions:hover {
+  box-shadow: -4px -20px 29px 0px rgb(62 66 66 / 37%);
+  cursor: pointer;
+}
+
+
+
+.main-card {
+  cursor: pointer;
+  transition: transform .4s ease-in-out;
+}
+
+.main-card:hover {
+  transform: scale(1.02);
 }
