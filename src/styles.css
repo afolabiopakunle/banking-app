@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: white }
+
+.mat-list-base .mat-list-item .mat-list-item-content {
+  justify-content: center;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 120px;
+}
+
+.mat-toolbar.mat-primary {
+  background: white;
+  color: #fff;
+}
+
+
+element.style {
+}
+.sidenav-container[_ngcontent-syi-c81] {
+  height: 100%;
+}
+
+ .mat-drawer-container {
+   position: relative;
+   z-index: 1;
+   box-sizing: border-box;
+   -webkit-overflow-scrolling: touch;
+   display: block;
+   overflow: hidden;
+ }
+.mat-drawer-container {
+  background-color: white;
+}
+
+.mat-nav-list .mat-list-item {
+  max-width: 48px;
+  margin: 20px auto;
+  padding: 6px !important;
+  border-radius: 15px;
+  box-shadow: 6px 8px 22px 0px rgba(62,66,66,0.27);
+}
+
+.mat-drawer-inner-container {
+  overflow: hidden !important;
+}
+
+.mat-list-base .mat-list-item .mat-list-item-content {
+  margin-top: -5px;
+}

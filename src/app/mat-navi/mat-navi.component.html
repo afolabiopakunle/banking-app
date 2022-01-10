@@ -1,0 +1,148 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]="(isHandset$ | async) === false">
+    <mat-toolbar><img class="earth-icon" src="/assets/images/home-page/icons8-google-earth.svg" alt=""></mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item class="active" href="#">
+        <mat-icon>home rounded</mat-icon>
+      </a>
+      <a mat-list-item class="inactive" href="#">
+        <mat-icon>bar_chart</mat-icon>
+      </a>
+      <a mat-list-item class="inactive" href="#">
+        <mat-icon>account_balance_wallet</mat-icon>
+      </a>
+      <a mat-list-item class="inactive" href="#">
+        <mat-icon>format_list_bulleted</mat-icon>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        class="menu-button"
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <div class="head-container">
+        <div class="input-group mb-3 shadow-lg search-box">
+          <input type="text" class="form-control search-input" placeholder="Search..." aria-label="Recipient's username"
+                 aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn input-button" type="button" id="button-addon2"><i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="head-shot">
+          <div><img class="profile-pix" src="/assets/images/home-page/afolabi.jpg" alt=""></div>
+          <p class="text-dark mr-3">Joshua Ikenga</p>
+          <mat-icon class="text-dark mt-n2">notifications</mat-icon>
+        </div>
+      </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h4 class="mat-subheading-1 font-weight-bold">Cards</h4>
+          <div class="credit-card-container">
+            <div class="row">
+              <div class="col-md-6">
+                <img style="cursor:pointer;" src="/assets/images/home-page/visa-card.svg" height="200px" alt="">
+              </div>
+              <div class="col-md-6">
+                <div class="credit-cards">
+                  <div class="credit-card zoom">
+                    <img src="/assets/images/home-page/mastercard.svg" class="mastercard" alt=""> <img
+                    src="/assets/images/home-page/dots.svg" class="dots" alt=""> 4242
+                  </div>
+                  <div class="credit-card zoom">
+                    <img src="/assets/images/home-page/visa.svg" class="mastercard" alt=""> <img
+                    src="/assets/images/home-page/dots.svg" class="dots" alt=""> 4081
+                  </div>
+                  <div class="credit-card zoom">
+                    <img src="/assets/images/home-page/mastercard.svg" class="mastercard" alt=""> <img
+                    src="/assets/images/home-page/dots.svg" class="dots" alt=""> 6019
+                  </div>
+                  <div class="credit-card zoom">
+                    <img src="/assets/images/home-page/mastercard.svg" class="mastercard" alt=""> <img
+                    src="/assets/images/home-page/dots.svg" class="dots" alt=""> 5827
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <h4 class="font-weight-bold">Transfer money</h4>
+          <div class="transfer-card">
+            <div class="row">
+              <div class="col-md-5 d-flex" style="white-space: nowrap">
+                <mat-icon style="color: #8854FF">credit_card</mat-icon> <p class="pt-1 pl-3">Quick transfer</p>
+              </div>
+              <div class="col-md-7">
+                <div class="transfer-pictures">
+                  <div>
+                    <img class="transfer-pix" src="/assets/images/home-page/english.jpg" alt="">
+                  </div>
+                  <div>
+                    <img class="transfer-pix" src="/assets/images/home-page/afolabi.jpg" alt="">
+                  </div>
+                  <div>
+                    <img class="transfer-pix" src="/assets/images/home-page/indian.jpg" alt="">
+                  </div>
+                  <div>
+                    <img class="transfer-pix" src="/assets/images/home-page/colors.jpg" alt="">
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="input-group mb-3 shadow-lg card-box">
+              <input type="text" class="form-control search-input" placeholder="4084 4084 4084 4084 " aria-label="Recipient's username"
+                     aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn input-button" type="button" id="button-addon2"><mat-icon style="margin-top: 7px">arrow_forward_ios</mat-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-7"><h4 class="font-weight-bold">Transactions</h4>
+        <div class="row">
+          <div class="transactions shadow-sm">
+
+          </div>
+          <div class="transactions shadow-sm">
+
+          </div>
+          <div class="transactions shadow-sm">
+
+          </div>
+          <div class="transactions shadow-sm">
+
+          </div>
+          <div class="transactions shadow-sm">
+
+          </div>
+        </div>
+        </div>
+        <div class="col-md-5">
+          <h4 class="font-weight-bold">Transaction statistics</h4>
+          <div class="statistics shadow">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
