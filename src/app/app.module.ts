@@ -12,12 +12,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from "@angular/material/card";
+import {NgChartsModule} from "ng2-charts";
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    MatNaviComponent
+    MatNaviComponent,
+    BarChartComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { MatCardModule } from "@angular/material/card";
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
