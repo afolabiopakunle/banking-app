@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ChartConfiguration} from "chart.js";
 
 @Component({
@@ -8,7 +8,8 @@ import {ChartConfiguration} from "chart.js";
 })
 export class BarChartComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
@@ -17,15 +18,45 @@ export class BarChartComponent implements OnInit {
   public barChartPlugins = [];
 
   public barChartData: ChartConfiguration<'bar'>['data'] = {
-    labels: [ '2006', '2007', '2008', '2009', '2010', '2011', '2012' ],
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+
     datasets: [
-      { data: [ 65, 59, 80, 81, 56, 55, 40 ], label: 'Series A' },
-      { data: [ 28, 48, 40, 19, 86, 27, 90 ], label: 'Series B' }
+      {
+        data: [65, 59, 80, 81, 56, 55, 90, 85], label: 'Inflow',
+        borderRadius: Number.MAX_VALUE,
+        backgroundColor: '#8854FF',
+        barThickness: 6
+      },
+      {
+        data: [28, 48, 40, 19, 86, 27, 40, 43], label: 'Outflow',
+        borderRadius: Number.MAX_VALUE,
+        backgroundColor: '#E33A24',
+        barThickness: 6
+      }
     ]
   };
 
   public barChartOptions: ChartConfiguration<'bar'>['options'] = {
-    responsive: false,
+    responsive: true,
+    scales: {
+      xAxis: {
+        display: true,
+        grid: {
+          drawBorder: false // removes random border at bottom
+        },
+      },
+      yAxis: {
+        display: false
+      }
+    },
+
+    plugins: {
+      legend: {
+        display: false,
+        align: 'end',
+
+      }
+    }
   };
 
 }
