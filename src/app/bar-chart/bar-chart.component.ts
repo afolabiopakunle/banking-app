@@ -54,7 +54,11 @@ export class BarChartComponent implements OnInit {
       legend: {
         display: false,
         align: 'end',
-
+        labels: {
+          usePointStyle: true,
+          boxWidth: 6,
+          boxHeight: 8
+        },
       }
     }
   };
