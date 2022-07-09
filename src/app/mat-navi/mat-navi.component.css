@@ -234,3 +234,7 @@
 .main-card:hover {
   transform: scale(1.02);
 }
+
+.core-card {
+  text-align: center;
+}

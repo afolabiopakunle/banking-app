@@ -30,7 +30,7 @@ export class BarChartComponent implements OnInit {
       {
         data: [28, 48, 40, 19, 86, 27, 40, 43], label: 'Outflow',
         borderRadius: Number.MAX_VALUE,
-        backgroundColor: '#E33A24',
+        backgroundColor: '#e96150',
         barThickness: 6
       }
     ]
