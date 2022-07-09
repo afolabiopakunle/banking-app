@@ -20,7 +20,7 @@
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .earth-icon {
@@ -186,9 +186,38 @@
 .transactions {
   height: 60px;
   width: 100%;
-  border-radius: 15px;
   margin-block: .5rem;
   transition: box-shadow .4s ease-in-out;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.transactions .transaction-cost {
+  font-weight: bold;
+}
+
+.transactions .transaction-time {
+  color: rgba(0,0,0,0.3);
+}
+
+.transactions:hover {
+  transform: scale(1.03);
+  transition: all .3s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  cursor: pointer;
+  background-color: snow;
+}
+
+.transactions .logo {
+  width: 40px;
+}
+
+.transactions p {
+  margin: 0;
 }
 
 .statistics {
@@ -196,13 +225,6 @@
   width: 100%;
   border-radius: 15px;
 }
-
-.transactions:hover {
-  box-shadow: -4px -20px 29px 0px rgb(62 66 66 / 37%);
-  cursor: pointer;
-}
-
-
 
 .main-card {
   cursor: pointer;
