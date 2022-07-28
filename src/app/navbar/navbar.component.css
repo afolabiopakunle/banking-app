@@ -1,0 +1,52 @@
+:host {
+  width: 100vw;
+}
+
+.head-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.search-box {
+  flex: 1;
+  border-radius: 40px;
+  margin-left: 50px;
+}
+
+.search-input:focus {
+  box-shadow: none;
+}
+
+.search-input {
+  border-radius: 15px;
+  height: 52px;
+  border: none;
+  outline: none;
+  padding-left: 2rem;
+  font-style: italic;
+  z-index: 0;
+}
+
+.head-shot {
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.profile-pix {
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 6px 8px 29px 0px rgba(62,66,66,0.37);
+  margin-right: 15px;
+}
+
+.menu-button {
+  color: #8854FF;
+  font-size: 30px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+

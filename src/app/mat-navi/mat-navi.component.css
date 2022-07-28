@@ -53,10 +53,12 @@
   color: rgb(225, 218, 241);
 }
 
-.head-container {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+  border: none;
+  border-radius: 15px;
+  background-color: #8854FF;
+  color: white;
+  width: 50px;
 }
 
 .search-box {
@@ -76,35 +78,6 @@
   outline: none;
   padding-left: 2rem;
   font-style: italic;
-}
-
-.head-shot {
-  flex: 1;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.profile-pix {
-  width: 60px;
-  border-radius: 50%;
-  box-shadow: 6px 8px 29px 0px rgba(62,66,66,0.37);
-  margin-right: 15px;
-}
-
-.menu-button {
-  color: #8854FF;
-  font-size: 30px;
-  margin-left: -20px;
-  margin-top: -20px;
-}
-
-.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
-  border: none;
-  border-radius: 15px;
-  background-color: #8854FF;
-  color: white;
-  width: 50px;
 }
 
 .input-button:hover {
