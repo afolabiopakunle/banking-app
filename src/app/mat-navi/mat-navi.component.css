@@ -211,3 +211,23 @@
 .core-card {
   text-align: center;
 }
+
+ .mat-icon-button {
+   color: skyblue;
+ }
+
+@media only screen and (max-width: 600px) {
+  .core-card {
+    margin-bottom: 2rem;
+  }
+
+  .credit-cards {
+    margin-bottom: 4rem;
+    padding-block: 1rem;
+    margin-left: -2rem;
+  }
+
+  .transfer-links {
+    margin-top: 4rem;
+  }
+}
