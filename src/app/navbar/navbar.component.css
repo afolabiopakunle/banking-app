@@ -53,4 +53,14 @@
   .search-box {
     display: none;
   }
+
+  p.name {
+    font-size: 16px;
+  }
+
+  .profile-pix {
+    width: 45px;
+    margin-top: -10px;
+  }
+
 }
