@@ -225,6 +225,8 @@
     margin-bottom: 4rem;
     padding-block: 1rem;
     margin-left: -2rem;
+    overflow-x: hidden;
+    height: 100%;
   }
 
   .transfer-links {
