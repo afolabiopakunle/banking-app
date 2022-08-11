@@ -101,12 +101,17 @@
   background-color: rgba(255,255,255,0.9);
   border-radius: 15px;
   text-align: center;
-  display: flex;
-  justify-content: center;
   align-items: center;
   width: 220px;
   margin-right: -8rem;
-  padding-bottom: 32px;
+  padding: 30px 14px;
+}
+
+.card-name {
+  margin-top: 16px;
+  font-style: italic;
+  font-weight: bold;
+  color: powderblue;
 }
 
 .zoom {

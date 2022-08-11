@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from "@angular/material/card";
 import {NgChartsModule} from "ng2-charts";
 import { BarChartComponent } from './bar-chart/bar-chart.component';
+import {AngularTiltModule} from "angular-tilt";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BarChartComponent } from './bar-chart/bar-chart.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
-    NgChartsModule
+    NgChartsModule,
+    AngularTiltModule
   ],
   providers: [],
   bootstrap: [AppComponent]
