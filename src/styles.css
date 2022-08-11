@@ -19,7 +19,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 
 element.style {
 }
-.sidenav-container[_ngcontent-syi-c81] {
+.sidenav-container {
   height: 100%;
 }
 
@@ -49,4 +49,27 @@ element.style {
 
 .mat-list-base .mat-list-item .mat-list-item-content {
   margin-top: -5px;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 100vw;
+  margin-block: .5em ;
+}
+
+::-webkit-scrollbar-thumb {
+  background: powderblue;
+  border-radius: 100vw;
+  border: 1px solid white;
+}
+
+@supports (scrollbar-color: powderblue white) {
+  * {
+    scrollbar-color: powderblue white;
+    scrollbar-width: thin;
+  }
 }
